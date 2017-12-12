@@ -3,7 +3,9 @@
  */
 package Interfaces;
 
-import Carte.Rarete;
+import Carte.*;
+import java.util.Set;
+import java.util.List;
 
 /** 
  * <!-- begin-UML-doc -->
@@ -17,7 +19,7 @@ public interface IDicoCartes {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void getAllCartes();
+	public List<Carte> getAllCartes();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -50,7 +52,7 @@ public interface IDicoCartes {
 	 * @param cartes
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void addCartes(Object cartes);
+	public void addCartes(ICarte... cartes);
 
 	/** 
 	 * <!-- begin-UML-doc -->

@@ -2,6 +2,8 @@
  * 
  */
 package Joueur;
+import java.util.Date;
+
 
 /** 
  * <!-- begin-UML-doc -->
@@ -15,17 +17,25 @@ public class CoordonneesBancaire {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer numero;
+	private String numero;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer cryptogramme;
+	private String cryptogramme;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private String dateExpiration;
+	private Date dateExpiration;
+	public CoordonneesBancaire(String numero, String cryptogramme,
+			Date dateExpiration) {
+		super();
+		this.numero = numero;
+		this.cryptogramme = cryptogramme;
+		this.dateExpiration = dateExpiration;
+	}
+	
 }

@@ -4,7 +4,11 @@
 package Interfaces;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
+
+import Carte.*;
+import Joueur.Deck;
 
 /** 
  * <!-- begin-UML-doc -->
@@ -39,7 +43,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> getCartePossedees();
+	public List<Carte> getCartePossedees();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -47,7 +51,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> getListeDeck();
+	public Set<Deck> getListeDeck();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -63,7 +67,7 @@ public interface IJoueur {
 	 * @param Carte
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajoutCarte(String Carte);
+	public void ajoutCarte(Carte Carte);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -141,7 +145,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public String verifierAchatMax();
+	public Rarete verifierAchatMax();
 
 	/** 
 	 * <!-- begin-UML-doc -->

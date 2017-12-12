@@ -8,7 +8,9 @@ import Interfaces.IDicoCartes;
 
 import java.util.Date;
 import java.util.Set;
+import java.util.List;
 
+import Carte.*;
 import Interfaces.ICarte;
 
 /** 
@@ -80,8 +82,9 @@ public class Joueur implements IJoueur {
 	 */
 	public boolean IsCoordoneeBancaireRemplie() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return false;
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
+		return (coordonneesBancaire!=null) ;
+		
 		// end-user-code
 	}
 
@@ -92,8 +95,8 @@ public class Joueur implements IJoueur {
 	 */
 	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		this.coordonneesBancaire=new CoordonneesBancaire(numero,crypto,dateE);
+		return (coordonneesBancaire!=null) ;
 		// end-user-code
 	}
 
@@ -102,10 +105,10 @@ public class Joueur implements IJoueur {
 	 * @see IJoueur#getCartePossedees()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> getCartePossedees() {
+	public List<Carte> getCartePossedees() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		
+		return this.dicoCartes.getAllCartes();
 		// end-user-code
 	}
 
@@ -114,10 +117,9 @@ public class Joueur implements IJoueur {
 	 * @see IJoueur#getListeDeck()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> getListeDeck() {
+	public Set<Deck> getListeDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return this.decks;
 		// end-user-code
 	}
 
@@ -128,8 +130,9 @@ public class Joueur implements IJoueur {
 	 */
 	public String creerDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		Deck d = new Deck();
+		this.decks.add(d);
+		return d.getId();
 		// end-user-code
 	}
 
@@ -138,9 +141,9 @@ public class Joueur implements IJoueur {
 	 * @see IJoueur#ajoutCarte(String Carte)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajoutCarte(String Carte) {
+	public void ajoutCarte(Carte carte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		this.dicoCartes.addCarte(carte);
 
 		// end-user-code
 	}
@@ -152,7 +155,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Set<String> accederDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		
 		return null;
 		// end-user-code
 	}
@@ -164,7 +167,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void supprimerDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -176,7 +179,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void gererRang() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		
 
 		// end-user-code
 	}
@@ -188,8 +191,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void offrirPack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-
+		this.nbPack++;
 		// end-user-code
 	}
 
@@ -200,8 +202,8 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajouterCartesPackCollection(ICarte... cartes) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-
+		this.dicoCartes.addCartes(cartes);
+		
 		// end-user-code
 	}
 
@@ -212,8 +214,7 @@ public class Joueur implements IJoueur {
 	 */
 	public String getCoordB() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return this.coordonneesBancaire.toString();
 		// end-user-code
 	}
 
@@ -224,7 +225,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajouterPacks() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		this.nbPack++;
 
 		// end-user-code
 	}
@@ -236,8 +237,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Integer getJoyaux() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		return this.joyaux;
 		// end-user-code
 	}
 
@@ -248,7 +248,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void enleverCartes(String nomCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		this.dicoCartes.supprimerCarte(nomCarte);
 
 		// end-user-code
 	}
@@ -258,10 +258,17 @@ public class Joueur implements IJoueur {
 	 * @see IJoueur#verifierAchatMax()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public String verifierAchatMax() {
+	public Rarete verifierAchatMax() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		int nb=this.joyaux;
+		if (nb<20)
+			return Rarete.Basique;
+		if(nb < 50 )
+			return Rarete.Commune;
+		if(nb < 200 )
+			return Rarete.Rare;
+		
+		return Rarete.Legendaire;
 		// end-user-code
 	}
 
@@ -272,8 +279,8 @@ public class Joueur implements IJoueur {
 	 */
 	public int getRang() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return 0;
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
+		return this.rang;
 		// end-user-code
 	}
 
@@ -284,7 +291,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void addDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -296,7 +303,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajouterJoyaux(Integer quantite) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		this.joyaux+=quantite;
 
 		// end-user-code
 	}
@@ -308,8 +315,8 @@ public class Joueur implements IJoueur {
 	 */
 	public Boolean havePackToOpen() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
+		return (this.nbPack>0);
 		// end-user-code
 	}
 
@@ -320,8 +327,9 @@ public class Joueur implements IJoueur {
 	 */
 	public void deletePack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		this.nbPack--;
 
 		// end-user-code
 	}
+
 }

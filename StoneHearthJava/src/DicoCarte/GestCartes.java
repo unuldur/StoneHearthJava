@@ -4,10 +4,14 @@
 package DicoCarte;
 
 import Interfaces.IDicoCartes;
-import java.util.Set;
+
+
+
 import Interfaces.ICarte;
+import Carte.Carte;
 import Carte.Rarete;
 
+import java.util.*;
 /** 
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
@@ -20,18 +24,21 @@ public class GestCartes implements IDicoCartes {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Set<ICarte> cartes;
+	private List<ICarte> cartes=new ArrayList<>();
 
+	
+	
+	private GestCartes(List<ICarte> cartes){
+	 this.cartes=cartes;
+	}
 	/** 
 	 * (non-Javadoc)
 	 * @see IDicoCartes#getAllCartes()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void getAllCartes() {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-
-		// end-user-code
+	public List<ICarte> getAllCartes() {
+		
+		return cartes;
 	}
 
 	/** 
@@ -39,11 +46,21 @@ public class GestCartes implements IDicoCartes {
 	 * @see IDicoCartes#getCarte(String nom)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
+	
+	
+	//returner  la 1ere ICarte
 	public ICarte getCarte(String nom) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		
+
+		for(ICarte e :cartes){
+			
+			if(e.getNom().equals(nom)){
+				 return e;
+			}
+				
+		}
+		
 		return null;
-		// end-user-code
 	}
 
 	/** 
@@ -51,11 +68,9 @@ public class GestCartes implements IDicoCartes {
 	 * @see IDicoCartes#addCarte(ICarte Carte)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void addCarte(ICarte Carte) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-
-		// end-user-code
+	public void addCarte(ICarte carte) {
+	
+		cartes.add(carte);
 	}
 
 	/** 
@@ -64,10 +79,15 @@ public class GestCartes implements IDicoCartes {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void supprimerCarte(String nom) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-
-		// end-user-code
+		
+		for(ICarte e :cartes){
+			
+			if(e.getNom().equals(nom)){
+				 cartes.remove(e);
+			}
+				
+		}
+		
 	}
 
 	/** 
@@ -75,11 +95,9 @@ public class GestCartes implements IDicoCartes {
 	 * @see IDicoCartes#addCartes(Object cartes)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void addCartes(Object cartes) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-
-		// end-user-code
+	public void addCartes(List<ICarte> cartes) {
+		
+		cartes.addAll(cartes);
 	}
 
 	/** 
@@ -88,9 +106,21 @@ public class GestCartes implements IDicoCartes {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public ICarte getCarteRandom(Rarete rarete) {
-		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return null;
-		// end-user-code
+		
+		List<ICarte> lr= new ArrayList<>();
+		
+		for(ICarte e :cartes){
+		
+			if(e.getRarete().equals(rarete))
+				lr.add(e);
+				
+		}
+		
+		Random r= new Random();
+		int rndm =r.nextInt(lr.size());
+		return lr.get(rndm);
+		
+		
+		
 	}
 }

@@ -12,6 +12,16 @@ import Interfaces.ICarte;
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class Carte implements ICarte {
+	
+	public Carte(String nom, String description, Integer attaque,
+			Integer defense, Rarete rarete) {
+		this.nom = nom;
+		this.description = description;
+		this.attaque = attaque;
+		this.defense = defense;
+		this.rarete = rarete;
+	}
+
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
@@ -50,7 +60,7 @@ public class Carte implements ICarte {
 	 */
 	public Rarete getRarete() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -62,7 +72,7 @@ public class Carte implements ICarte {
 	 */
 	public String getNom() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -74,7 +84,7 @@ public class Carte implements ICarte {
 	 */
 	public int getAttaque() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return 0;
 		// end-user-code
 	}
@@ -86,7 +96,7 @@ public class Carte implements ICarte {
 	 */
 	public int getDefense() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return 0;
 		// end-user-code
 	}
@@ -98,7 +108,7 @@ public class Carte implements ICarte {
 	 */
 	public String getDescription() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}

@@ -3,6 +3,9 @@
  */
 package Fabrique;
 
+import Carte.Carte;
+import Carte.Rarete;
+import DicoCarte.GestCartes;
 import Interfaces.ICarte;
 import Interfaces.IDicoCartes;
 import Interfaces.IJoueur;
@@ -20,6 +23,14 @@ import Interfaces.IJoueurConnecte;
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
 public class SimpleFactory {
+	
+	private IDicoCartes collection;
+	
+	public SimpleFactory() {
+		collection = new GestCartes();
+		collection.addCarte(new Carte("Petit Dragon", "Petit dragon deviendra grand !", 2, 1, Rarete.Commune));
+	}
+
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
@@ -28,7 +39,7 @@ public class SimpleFactory {
 	 */
 	public ICarte createCarte() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -42,7 +53,7 @@ public class SimpleFactory {
 	 */
 	public IDicoCartes createDicoCartes(ICarte... cartes) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -56,7 +67,7 @@ public class SimpleFactory {
 	 */
 	public IJoueur createJoueur(IDicoCartes collection) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -69,7 +80,7 @@ public class SimpleFactory {
 	 */
 	public IMoteurJeu createMoteurDeJeu() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -82,7 +93,7 @@ public class SimpleFactory {
 	 */
 	public IPaiement createPaiment() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -96,7 +107,7 @@ public class SimpleFactory {
 	 */
 	public IStrategieOpenPack createStrategiePack(IDicoCartes dicoCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -110,7 +121,7 @@ public class SimpleFactory {
 	 */
 	public IJoueurs createJoueurs(IJoueur... joueurs) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -126,7 +137,7 @@ public class SimpleFactory {
 	public IConnexion createConnexion(IJoueurs ensembleJoueurs,
 			IJoueurs JoueursCherchantPartie) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -143,7 +154,7 @@ public class SimpleFactory {
 	public IJoueurConnecte createJoueurConnecte(IJoueur joueur,
 			IPaiement paiement, IPaiement stratOpenPack) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}

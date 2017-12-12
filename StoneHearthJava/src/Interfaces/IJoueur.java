@@ -4,6 +4,7 @@
 package Interfaces;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 /** 
@@ -39,7 +40,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> getCartePossedees();
+	public List<ICarte> getCartePossedees();
 
 	/** 
 	 * <!-- begin-UML-doc -->

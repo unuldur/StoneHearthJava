@@ -18,7 +18,7 @@ public interface IJoueurConnecte extends IJoueur {
 	 * @param prixDeck
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void AcheterEmplacementDeck(Object prixDeck);
+	public boolean AcheterEmplacementDeck(int prixDeck);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -46,7 +46,7 @@ public interface IJoueurConnecte extends IJoueur {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ouvrirPack();
+	public boolean ouvrirPack();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -55,5 +55,5 @@ public interface IJoueurConnecte extends IJoueur {
 	 * @param prixUnPack
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void acheterPacks(int nb, int prixUnPack);
+	public boolean acheterPacks(int nb, int prixUnPack);
 }

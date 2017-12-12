@@ -3,6 +3,8 @@
  */
 package StrategiePack;
 
+import java.util.List;
+
 import Interfaces.IStrategieOpenPack;
 import Interfaces.IDicoCartes;
 import Interfaces.ICarte;
@@ -26,7 +28,7 @@ public class SimpleStrategiePack implements IStrategieOpenPack {
 	 * @see IStrategieOpenPack#ouvrirPack()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public ICarte ouvrirPack() {
+	public List<ICarte> ouvrirPack() {
 		// begin-user-code
 		// TODO Module de remplacement de méthode auto-généré
 		return null;

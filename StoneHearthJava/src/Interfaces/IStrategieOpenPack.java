@@ -3,6 +3,8 @@
  */
 package Interfaces;
 
+import java.util.List;
+
 /** 
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
@@ -16,5 +18,5 @@ public interface IStrategieOpenPack {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public ICarte ouvrirPack();
+	public List<ICarte> ouvrirPack();
 }

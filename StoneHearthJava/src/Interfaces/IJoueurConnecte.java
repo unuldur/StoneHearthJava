@@ -44,9 +44,10 @@ public interface IJoueurConnecte extends IJoueur {
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
+	 * @return 
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ouvrirPack();
+	public Boolean ouvrirPack();
 
 	/** 
 	 * <!-- begin-UML-doc -->

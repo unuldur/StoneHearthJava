@@ -80,7 +80,7 @@ public class Joueur implements IJoueur {
 	 */
 	public boolean IsCoordoneeBancaireRemplie() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return false;
 		// end-user-code
 	}
@@ -92,7 +92,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -104,7 +104,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Set<String> getCartePossedees() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -116,7 +116,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Set<String> getListeDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -128,7 +128,7 @@ public class Joueur implements IJoueur {
 	 */
 	public String creerDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -140,7 +140,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajoutCarte(String Carte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -152,7 +152,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Set<String> accederDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -164,7 +164,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void supprimerDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -176,7 +176,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void gererRang() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -188,7 +188,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void offrirPack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -200,7 +200,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajouterCartesPackCollection(ICarte... cartes) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -212,7 +212,7 @@ public class Joueur implements IJoueur {
 	 */
 	public String getCoordB() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -224,7 +224,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajouterPacks() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -236,7 +236,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Integer getJoyaux() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -248,7 +248,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void enleverCartes(String nomCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -260,7 +260,7 @@ public class Joueur implements IJoueur {
 	 */
 	public String verifierAchatMax() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -272,7 +272,7 @@ public class Joueur implements IJoueur {
 	 */
 	public int getRang() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return 0;
 		// end-user-code
 	}
@@ -284,7 +284,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void addDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -296,7 +296,7 @@ public class Joueur implements IJoueur {
 	 */
 	public void ajouterJoyaux(Integer quantite) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -308,7 +308,7 @@ public class Joueur implements IJoueur {
 	 */
 	public Boolean havePackToOpen() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -320,8 +320,13 @@ public class Joueur implements IJoueur {
 	 */
 	public void deletePack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
+	}
+	
+
+	public int getPack(){
+		return this.nbPack;
 	}
 }

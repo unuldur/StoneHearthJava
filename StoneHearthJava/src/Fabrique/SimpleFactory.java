@@ -23,12 +23,13 @@ public class SimpleFactory {
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
+	 * @param nom 
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public ICarte createCarte() {
+	public ICarte createCarte(String nom) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -42,7 +43,7 @@ public class SimpleFactory {
 	 */
 	public IDicoCartes createDicoCartes(ICarte... cartes) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -56,7 +57,7 @@ public class SimpleFactory {
 	 */
 	public IJoueur createJoueur(IDicoCartes collection) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -69,7 +70,7 @@ public class SimpleFactory {
 	 */
 	public IMoteurJeu createMoteurDeJeu() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -82,7 +83,7 @@ public class SimpleFactory {
 	 */
 	public IPaiement createPaiment() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -96,7 +97,7 @@ public class SimpleFactory {
 	 */
 	public IStrategieOpenPack createStrategiePack(IDicoCartes dicoCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -110,7 +111,7 @@ public class SimpleFactory {
 	 */
 	public IJoueurs createJoueurs(IJoueur... joueurs) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -126,7 +127,7 @@ public class SimpleFactory {
 	public IConnexion createConnexion(IJoueurs ensembleJoueurs,
 			IJoueurs JoueursCherchantPartie) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -141,10 +142,37 @@ public class SimpleFactory {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public IJoueurConnecte createJoueurConnecte(IJoueur joueur,
-			IPaiement paiement, IPaiement stratOpenPack) {
+			IPaiement paiement, IStrategieOpenPack stratOpenPack) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
+	}
+
+	public IJoueurConnecte createAnnaConnecte() {
+		// TODO Module de remplacement de mÃ©thode auto-gÃ©nÃ©rÃ©
+		// createCarte dans Factory doit avoir des parametres !!
+		ICarte c1 = new Carte();
+		ICarte c2 = new Carte();
+		ICarte c3 = new Carte();
+		ICarte c4 = new Carte();
+		ICarte c5 = new Carte();
+		ICarte c6 = new Carte();
+		ICarte c7 = new Carte();
+		
+		IDicoCartes dicoCarteAnna = createDicoCartes(c2, c4, c6);
+		IDicoCartes dicoCollectionAll = createDicoCartes();
+		
+		//crÃ©ation de 2 joueurs 
+		IJoueur anna=createJoueur(dicoCarteAnna);
+		
+		
+		//crÃ©er un joueur connectÃ© 
+		IPaiement pAnna= createPaiment();
+		IStrategieOpenPack stratOpenPackAnna=createStrategiePack(dicoCollectionAll);
+
+		IJoueurConnecte annaConnectee=createJoueurConnecte(anna,pAnna,stratOpenPackAnna);
+		
+		return annaConnectee;
 	}
 }

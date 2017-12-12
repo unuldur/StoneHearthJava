@@ -180,4 +180,8 @@ public interface IJoueur {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void deletePack();
+	
+
+	public int getPack();
+	
 }

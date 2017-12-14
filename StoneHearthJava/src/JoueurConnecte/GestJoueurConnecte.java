@@ -39,6 +39,14 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	private IStrategieOpenPack iStrategieOpenPack;
 
+	public GestJoueurConnecte(IJoueur iJoueur, IPaiement iPaiement,
+			IStrategieOpenPack iStrategieOpenPack) {
+		super();
+		this.iJoueur = iJoueur;
+		this.iPaiement = iPaiement;
+		this.iStrategieOpenPack = iStrategieOpenPack;
+	}
+
 	/** 
 	 * (non-Javadoc)
 	 * @see IJoueur#IsCoordoneeBancaireRemplie()
@@ -46,7 +54,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public boolean IsCoordoneeBancaireRemplie() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return false;
 		// end-user-code
 	}
@@ -58,7 +66,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -70,7 +78,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Set<String> getCartePossedees() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -82,7 +90,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Set<String> getListeDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -94,7 +102,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public String creerDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -106,7 +114,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ajoutCarte(String Carte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -118,7 +126,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Set<String> accederDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -130,7 +138,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void supprimerDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -142,7 +150,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void gererRang() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -154,7 +162,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void offrirPack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -166,7 +174,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ajouterCartesPackCollection(ICarte... cartes) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -178,7 +186,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public String getCoordB() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -190,7 +198,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ajouterPacks() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -202,7 +210,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Integer getJoyaux() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -214,7 +222,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void enleverCartes(String nomCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -226,7 +234,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public String verifierAchatMax() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -238,7 +246,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public int getRang() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return 0;
 		// end-user-code
 	}
@@ -250,7 +258,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void addDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -262,7 +270,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ajouterJoyaux(Integer quantite) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -274,7 +282,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Boolean havePackToOpen() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -286,7 +294,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void deletePack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -298,7 +306,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void AcheterEmplacementDeck(Object prixDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -311,7 +319,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	public boolean creerCompteBancaire(String type, String numero,
 			String crypto, Date dateE) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return false;
 		// end-user-code
 	}
@@ -323,7 +331,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void supprimerCartes(String nomCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -335,7 +343,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ouvrirPack() {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -347,7 +355,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void acheterPacks(int nb, int prixUnPack) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}

@@ -12,7 +12,7 @@ import Interfaces.ICarte;
 
 /** 
  * <!-- begin-UML-doc -->
- * Probas : 1% leg ; 20% rare ; au moins une rare par pack
+ * genereRareteSimple = 3 Communes, 1 Rare, 1 Legendaire
  * <!-- end-UML-doc -->
  * @author julie
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
@@ -36,18 +36,29 @@ public class SimpleStrategiePack implements IStrategieOpenPack {
 	 */
 	public ArrayList<ICarte> ouvrirPack() {
 		// begin-user-code
-		/*
-		 * Probas : 1% leg ; 20% rare ; au moins une rare par pack
-		 */
-		Rarete[] probas = genereRarete();
+		// 3 Communes, 1 Rare, 1 Legendaire
+		Rarete[] probas = genereRareteSimple();
 		ArrayList<ICarte> cartes = new ArrayList<>();
 		for (Rarete rarete : probas)
 			cartes.add(dicoCarte.getCarteRandom(rarete));
 		return cartes;
 		// end-user-code
 	}
+
+	private Rarete[] genereRareteSimple() {
+		Rarete res[] = new Rarete[5];
+		res[0] = Rarete.Commune;
+		res[1] = Rarete.Commune;
+		res[2] = Rarete.Commune;
+		res[3] = Rarete.Rare;
+		res[4] = Rarete.Legendaire;
+		return res;
+	}
 	
-	private Rarete[] genereRarete() {
+	/*
+	 * Probas : 1% leg ; 20% rare ; au moins une rare par pack
+	 *
+	private Rarete[] genereRareteComplexe() {
 		Rarete res[] = new Rarete[5];
 		boolean quota = false;
 		for (int j = 0; j < res.length; j++) {
@@ -67,5 +78,5 @@ public class SimpleStrategiePack implements IStrategieOpenPack {
 		if (!quota)
 			res[0] = Rarete.Rare;
 		return res;
-	}
+	}*/
 }

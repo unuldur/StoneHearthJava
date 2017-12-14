@@ -4,13 +4,6 @@ import java.util.*;
 
 import Fabrique.SimpleFactory;
 import Interfaces.ICarte;
-import Interfaces.IDicoCartes;
-import Interfaces.IJoueur;
-import Interfaces.IMoteurJeu;
-import Interfaces.IPaiement;
-import Interfaces.IStrategieOpenPack;
-import Interfaces.IJoueurs;
-import Interfaces.IConnexion;
 import Interfaces.IJoueurConnecte;
 import static org.junit.Assert.*;
 
@@ -34,7 +27,7 @@ public class TestIntegration {
 		System.out.println(nbJoyauxAvant);*/
 
 		// Recuperation des cartes possedees par anna
-		Set<String> catresAvant = annaConnectee.getCartePossedees();
+		List<ICarte> catresAvant = annaConnectee.getCartePossedees();
 		/*System.out.println("Liste des cartes d'Anna avant la destruction de la carte petit dragon");
 		System.out.println(catresAvant);
 		
@@ -50,19 +43,19 @@ public class TestIntegration {
 
 		// Recuperation des cartes possedees par anna apres la destruction de la carte
 		// La carte petit dragon ne doit plus apparaitre
-		Set<String> catresApres = annaConnectee.getCartePossedees();
+		List<ICarte> catresApres = annaConnectee.getCartePossedees();
 		/*System.out.println("Liste des cartes d'Anna apres la destruction de la carte petit dragon");
 		System.out.println(catresApres);*/
 
 		// Test de la presence de la carte petit dragon dans la collection d'anna
 		boolean presence_carte = false;
-		for (String s : catresApres) {
-			if (s=="petit dragon") {
+		for (ICarte s : catresApres) {
+			if (s.getNom().equals("petit dragon")){
 				presence_carte = true;
 			}
 		}
 
-		assertTrue(nbJoyauxApres == nbJoyauxAvant + 2 && presence_carte == false);
+		assertTrue(nbJoyauxApres == nbJoyauxAvant + 2 && !presence_carte);
 	
 	}	
 
@@ -80,9 +73,9 @@ public class TestIntegration {
 		System.out.println(nbPackAvant);*/
 		
 		// Recuperation des cartes possedees par anna
-		Set<String> catresAvant = annaConnectee.getCartePossedees();
+		List<ICarte> cartesAvant = annaConnectee.getCartePossedees();
 		/*System.out.println("Liste des cartes d'Anna avant l'ouverture du pack");
-		System.out.println(catresAvant);
+		System.out.println(cartesAvant);
 		
 		System.out.println("Ouverture du pack");*/
 		// Ouverture d'un pack
@@ -96,12 +89,12 @@ public class TestIntegration {
 
 		// Recuperation des cartes possedees par anna apres l'ouverture du pack
 		// La longueur de carteApres doit etre egal a la longueur de catreAvant + 5
-		Set<String> catresApres = annaConnectee.getCartePossedees();
+		List<ICarte> catresApres = annaConnectee.getCartePossedees();
 		/*System.out.println("Liste des cartes d'Anna apres l'ouverture du pack");
 		System.out.println(catresApres);*/
 		
 
-		assertTrue(catresAvant.size() == catresApres.size() - 5 && nbPackApres == nbPackAvant - 1);
+		assertTrue(cartesAvant.size() == catresApres.size() - 5 && nbPackApres == nbPackAvant - 1);
 		
 		
 		

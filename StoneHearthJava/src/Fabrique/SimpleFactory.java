@@ -152,16 +152,14 @@ public class SimpleFactory {
 	public IJoueurConnecte createAnnaConnecte() {
 		// TODO Module de remplacement de méthode auto-généré
 		// createCarte dans Factory doit avoir des parametres !!
-		ICarte c1 = new Carte();
-		ICarte c2 = new Carte();
-		ICarte c3 = new Carte();
-		ICarte c4 = new Carte();
-		ICarte c5 = new Carte();
-		ICarte c6 = new Carte();
-		ICarte c7 = new Carte();
+		IDicoCartes dicoCollectionAll = createDicoCartes();
+
+		ICarte c2 = dicoCollectionAll.getCarte("");
+		ICarte c4 = dicoCollectionAll.getCarte("");
+		ICarte c6 = dicoCollectionAll.getCarte("");
 		
 		IDicoCartes dicoCarteAnna = createDicoCartes(c2, c4, c6);
-		IDicoCartes dicoCollectionAll = createDicoCartes();
+
 		
 		//création de 2 joueurs 
 		IJoueur anna=createJoueur(dicoCarteAnna);

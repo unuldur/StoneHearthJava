@@ -4,6 +4,7 @@
 package Carte;
 
 import Interfaces.ICarte;
+import java.util.Set;
 
 /** 
  * <!-- begin-UML-doc -->

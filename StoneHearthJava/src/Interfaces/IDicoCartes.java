@@ -6,6 +6,9 @@ package Interfaces;
 import java.util.List;
 
 import Carte.Rarete;
+import Carte.*;
+import java.util.Set;
+import java.util.List;
 
 /**
  * <!-- begin-UML-doc -->

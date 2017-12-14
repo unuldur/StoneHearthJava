@@ -320,7 +320,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 * @see IJoueurConnecte#supprimerCartes(String nomCarte)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void supprimerCartes(String nomCarte) {
+	public boolean supprimerCartes(String nomCarte) {
 		// begin-user-code
 		List<ICarte> cartes = iJoueur.getCartePossedees();
 		ICarte carte = null;
@@ -330,7 +330,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 				break;
 			}
 		}
-		if(carte == null) return;
+		if(carte == null) return false;
 		Rarete r = carte.getRarete();
 		int prix = 0;
 		switch(r){
@@ -343,9 +343,10 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 		case Legendaire:
 			prix = 20;
 		}
-		if(prix == 0) return;
+		if(prix == 0) return false;
 		iJoueur.ajouterJoyaux(prix);
 		iJoueur.enleverCartes(nomCarte);
+		return true;
 		// end-user-code
 	}
 

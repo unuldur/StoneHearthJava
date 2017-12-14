@@ -19,6 +19,7 @@ import JoueurConnecte.GestJoueurConnecte;
 import MoteurDeJeu.SimpleMoteurDeJeu;
 import Paiement.SimplePaiement;
 import StrategiePack.SimpleStrategiePack;
+import Joueur.Joueur;
 
 /** 
  * <!-- begin-UML-doc -->
@@ -32,7 +33,7 @@ public class SimpleFactory {
 
 	public SimpleFactory() {
 		collection = new GestCartes();
-		collection.addCarte(new Carte("Petit Dragon", "Petit dragon deviendra grand !", 2, 2, Rarete.Basique));
+		collection.addCarte(new Carte("Petit Dragon", "Petit dragon deviendra grand !", 2, 2, Rarete.Commune));
 		collection.addCarte(new Carte("Grand Dragon", "Il est fort maintenant !", 6, 3, Rarete.Basique));
 		collection.addCarte(new Carte("Dragon de la mort", "Ses apprentissages des arts martiaux ont payés", 12, 12, Rarete.Basique));
 		collection.addCarte(new Carte("Robot Mignon", "🤖 <3 🤖", 1, 3, Rarete.Commune)); // avec mes betises, y a des chances que ne fonctionne
@@ -87,10 +88,12 @@ public class SimpleFactory {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public IJoueur createJoueur(IDicoCartes collection) {
+	public IJoueur createAnna(IDicoCartes collection) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
-		return null;
+        IJoueur anna = new Joueur("anna", collection);
+        anna.offrirPack();
+        anna.offrirPack();
+		return anna;
 		// end-user-code
 	}
 
@@ -187,25 +190,29 @@ public class SimpleFactory {
 		// end-user-code
 	}
 
+	public IDicoCartes getCollection(){
+	    return collection;
+    }
+
 	public IJoueurConnecte createAnnaConnecte() {
 		// TODO Module de remplacement de méthode auto-généré
 		// createCarte dans Factory doit avoir des parametres !!
-		IDicoCartes dicoCollectionAll = createDicoCartes();
 
-		ICarte c2 = dicoCollectionAll.getCarte("Petit Dragon");
-		ICarte c4 = dicoCollectionAll.getCarte("Tres tres gros laser");
-		ICarte c6 = dicoCollectionAll.getCarte("Robot Mignon");
+		ICarte c2 = collection.getCarte("Petit Dragon");
+		ICarte c4 = collection.getCarte("Tres tres gros laser");
+		ICarte c6 = collection.getCarte("Robot Mignon");
+        ICarte c7 = collection.getCarte("Grand Dragon");
 
-		IDicoCartes dicoCarteAnna = createDicoCartes(c2, c4, c6);
+		IDicoCartes dicoCarteAnna = createDicoCartes(c2, c4, c6, c7);
 
 
 		//création de 2 joueurs
-		IJoueur anna=createJoueur(dicoCarteAnna);
+		IJoueur anna= createAnna(dicoCarteAnna);
 
 
 		//créer un joueur connecté
 		IPaiement pAnna= createPaiment();
-		IStrategieOpenPack stratOpenPackAnna=createStrategiePack(dicoCollectionAll);
+		IStrategieOpenPack stratOpenPackAnna=createStrategiePack();
 
 		return createJoueurConnecte(anna,pAnna,stratOpenPackAnna);
 	}

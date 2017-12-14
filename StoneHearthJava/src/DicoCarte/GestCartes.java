@@ -41,7 +41,6 @@ public class GestCartes implements IDicoCartes {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public List<ICarte> getAllCartes() {
-
 		return cartes;
 	}
 
@@ -54,14 +53,10 @@ public class GestCartes implements IDicoCartes {
 
 	//returner  la 1ere ICarte
 	public ICarte getCarte(String nom) {
-
-
 		for(ICarte e :cartes){
-
 			if(e.getNom().equals(nom)){
 				 return e;
 			}
-
 		}
 
 		return null;
@@ -83,15 +78,15 @@ public class GestCartes implements IDicoCartes {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public void supprimerCarte(String nom) {
-
+		ICarte c = null;
 		for(ICarte e :cartes){
-
 			if(e.getNom().equals(nom)){
-				 cartes.remove(e);
+				c = e;
+				break;
 			}
-
 		}
-
+		if (c != null)
+			cartes.remove(c);
 	}
 
 	/**
@@ -109,16 +104,11 @@ public class GestCartes implements IDicoCartes {
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	public ICarte getCarteRandom(Rarete rarete) {
-
 		List<ICarte> lr= new ArrayList<>();
-
 		for(ICarte e :cartes){
-
 			if(e.getRarete().equals(rarete))
 				lr.add(e);
-
 		}
-
 		Random r= new Random();
 		int rndm =r.nextInt(lr.size());
 		return lr.get(rndm);

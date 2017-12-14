@@ -23,13 +23,13 @@ public class Joueur implements IJoueur {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer joyaux;
+	private int joyaux;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer rang;
+	private int rang;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
@@ -41,13 +41,13 @@ public class Joueur implements IJoueur {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer nbParties;
+	private int nbParties;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer nbDecks;
+	private int nbDecks;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
@@ -59,7 +59,7 @@ public class Joueur implements IJoueur {
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Integer nbPack;
+	private int nbPack;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
@@ -73,7 +73,12 @@ public class Joueur implements IJoueur {
 	 */
 	private Set<Deck> decks;
 
-	/** 
+    public Joueur(String pseudo, IDicoCartes dicoCartes) {
+        this.pseudo = pseudo;
+        this.dicoCartes = dicoCartes;
+    }
+
+    /**
 	 * (non-Javadoc)
 	 * @see IJoueur#IsCoordoneeBancaireRemplie()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"

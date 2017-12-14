@@ -30,7 +30,7 @@ public interface IJoueurConnecte extends IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public boolean creerCompteBancaire(String type, String numero,
+	boolean creerCompteBancaire(String type, String numero,
 			String crypto, Date dateE);
 
 	/** 
@@ -39,7 +39,7 @@ public interface IJoueurConnecte extends IJoueur {
 	 * @param nomCarte
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void supprimerCartes(String nomCarte);
+	boolean supprimerCartes(String nomCarte);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -47,7 +47,7 @@ public interface IJoueurConnecte extends IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public boolean ouvrirPack();
+	boolean ouvrirPack();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -56,5 +56,5 @@ public interface IJoueurConnecte extends IJoueur {
 	 * @param prixUnPack
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public boolean acheterPacks(int nb, int prixUnPack);
+	boolean acheterPacks(int nb, int prixUnPack);
 }

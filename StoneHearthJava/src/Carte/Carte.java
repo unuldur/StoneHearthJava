@@ -23,6 +23,15 @@ public class Carte implements ICarte {
 		this.rarete = rarete;
 	}
 
+	@Override
+	public String toString() {
+		return 	"nom='" + nom + '\'' +
+				", description='" + description + '\'' +
+				", attaque=" + attaque +
+				", defense=" + defense +
+				", rarete=" + rarete;
+	}
+
 	/**
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->

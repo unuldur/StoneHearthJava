@@ -192,9 +192,9 @@ public class SimpleFactory {
 		// createCarte dans Factory doit avoir des parametres !!
 		IDicoCartes dicoCollectionAll = createDicoCartes();
 
-		ICarte c2 = dicoCollectionAll.getCarte("");
-		ICarte c4 = dicoCollectionAll.getCarte("");
-		ICarte c6 = dicoCollectionAll.getCarte("");
+		ICarte c2 = dicoCollectionAll.getCarte("Petit Dragon");
+		ICarte c4 = dicoCollectionAll.getCarte("Tres tres gros laser");
+		ICarte c6 = dicoCollectionAll.getCarte("Robot Mignon");
 
 		IDicoCartes dicoCarteAnna = createDicoCartes(c2, c4, c6);
 
@@ -207,8 +207,6 @@ public class SimpleFactory {
 		IPaiement pAnna= createPaiment();
 		IStrategieOpenPack stratOpenPackAnna=createStrategiePack(dicoCollectionAll);
 
-		IJoueurConnecte annaConnectee=createJoueurConnecte(anna,pAnna,stratOpenPackAnna);
-
-		return annaConnectee;
+		return createJoueurConnecte(anna,pAnna,stratOpenPackAnna);
 	}
 }

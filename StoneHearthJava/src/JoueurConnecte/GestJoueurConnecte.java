@@ -303,7 +303,12 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 		// end-user-code
 	}
 
-	/** 
+    @Override
+    public int getPack() {
+        return iJoueur.getPack();
+    }
+
+    /**
 	 * (non-Javadoc)
 	 * @see IJoueurConnecte#AcheterEmplacementDeck(int prixDeck)
 	 */

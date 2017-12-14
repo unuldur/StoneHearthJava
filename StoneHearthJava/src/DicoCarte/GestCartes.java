@@ -31,7 +31,11 @@ public class GestCartes implements IDicoCartes {
 	private GestCartes(List<ICarte> cartes){
 		this.cartes=cartes;
 	}
-	/**
+
+    public GestCartes() {
+    }
+
+    /**
 	 * (non-Javadoc)
 	 * @see IDicoCartes#getAllCartes()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"

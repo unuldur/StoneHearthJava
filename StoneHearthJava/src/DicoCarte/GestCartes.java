@@ -55,7 +55,7 @@ public class GestCartes implements IDicoCartes {
 		for(ICarte e :cartes){
 
 			if(e.getNom().equals(nom)){
-				return e;
+				 return e;
 			}
 
 		}
@@ -83,7 +83,7 @@ public class GestCartes implements IDicoCartes {
 		for(ICarte e :cartes){
 
 			if(e.getNom().equals(nom)){
-				cartes.remove(e);
+				 cartes.remove(e);
 			}
 
 		}

@@ -5,7 +5,7 @@ package Interfaces;
 
 import java.util.List;
 
-/** 
+/**
  * <!-- begin-UML-doc -->
  * <!-- end-UML-doc -->
  * @author julie

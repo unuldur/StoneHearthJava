@@ -28,7 +28,7 @@ public class GestJoueurs implements IJoueurs {
 	 */
 	public IJoueur trouverJoueur(String pseudo) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}
@@ -40,7 +40,7 @@ public class GestJoueurs implements IJoueurs {
 	 */
 	public void supprimeJoueur(String name) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -52,7 +52,7 @@ public class GestJoueurs implements IJoueurs {
 	 */
 	public void ajouteJoueur(String pseudo) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 
 		// end-user-code
 	}
@@ -64,7 +64,7 @@ public class GestJoueurs implements IJoueurs {
 	 */
 	public IJoueur getRandomJoueur(Integer rang) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
+		// TODO Module de remplacement de mï¿½thode auto-gï¿½nï¿½rï¿½
 		return null;
 		// end-user-code
 	}

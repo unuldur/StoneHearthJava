@@ -139,10 +139,10 @@ public class Joueur implements IJoueur {
 
 	/** 
 	 * (non-Javadoc)
-	 * @see IJoueur#ajoutCarte(String Carte)
+	 * @see IJoueur#ajoutCarte(ICarte Carte)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajoutCarte(Carte carte) {
+	public void ajoutCarte(ICarte carte) {
 		// begin-user-code
 		this.dicoCartes.addCarte(carte);
 
@@ -198,10 +198,9 @@ public class Joueur implements IJoueur {
 
 	/** 
 	 * (non-Javadoc)
-	 * @see IJoueur#ajouterCartesPackCollection(ICarte... cartes)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajouterCartesPackCollection(ICarte... cartes) {
+	public void ajouterCartesPackCollection(List<ICarte> cartes) {
 		// begin-user-code
 		this.dicoCartes.addCartes(cartes);
 

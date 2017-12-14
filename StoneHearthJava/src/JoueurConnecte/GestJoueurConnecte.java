@@ -1,6 +1,3 @@
-/**
- * 
- */
 package JoueurConnecte;
 
 import Carte.Rarete;
@@ -14,6 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 import Interfaces.ICarte;
+import Joueur.Deck;
 
 /** 
  * <!-- begin-UML-doc -->
@@ -57,7 +55,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public boolean IsCoordoneeBancaireRemplie() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.IsCoordoneeBancaireRemplie();
 		// end-user-code
 	}
@@ -69,7 +66,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.ajoutCB(type, numero, crypto, dateE);
 		// end-user-code
 	}
@@ -82,7 +78,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public List<ICarte> getCartePossedees() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.getCartePossedees();
 		// end-user-code
 	}
@@ -92,9 +87,8 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 * @see IJoueur#getListeDeck()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> getListeDeck() {
+	public Set<Deck> getListeDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.getListeDeck();
 		// end-user-code
 	}
@@ -106,19 +100,17 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public String creerDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.creerDeck();
 		// end-user-code
 	}
 
 	/** 
 	 * (non-Javadoc)
-	 * @see IJoueur#ajoutCarte(String Carte)
+	 * @see IJoueur#ajoutCarte(ICarte Carte)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajoutCarte(String Carte) {
+	public void ajoutCarte(ICarte Carte) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.ajoutCarte(Carte);
 		// end-user-code
 	}
@@ -130,7 +122,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Set<String> accederDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.accederDeck(idDeck);
 		// end-user-code
 	}
@@ -142,7 +133,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void supprimerDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.supprimerDeck(idDeck);
 		// end-user-code
 	}
@@ -154,7 +144,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void gererRang() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.gererRang();
 		// end-user-code
 	}
@@ -166,19 +155,16 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void offrirPack() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.offrirPack();
 		// end-user-code
 	}
 
 	/** 
 	 * (non-Javadoc)
-	 * @see IJoueur#ajouterCartesPackCollection(ICarte... cartes)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajouterCartesPackCollection(ICarte... cartes) {
+	public void ajouterCartesPackCollection(List<ICarte> cartes) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.ajouterCartesPackCollection(cartes);
 		// end-user-code
 	}
@@ -190,7 +176,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public String getCoordB() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.getCoordB();
 		// end-user-code
 	}
@@ -202,7 +187,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ajouterPacks() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.ajouterPacks();
 		// end-user-code
 	}
@@ -214,7 +198,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Integer getJoyaux() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.getJoyaux();
 		// end-user-code
 	}
@@ -226,7 +209,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void enleverCartes(String nomCarte) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.enleverCartes(nomCarte);
 		// end-user-code
 	}
@@ -236,9 +218,8 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 * @see IJoueur#verifierAchatMax()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public String verifierAchatMax() {
+	public Rarete verifierAchatMax() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.verifierAchatMax();
 		// end-user-code
 	}
@@ -250,7 +231,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public int getRang() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.getRang();
 		// end-user-code
 	}
@@ -262,7 +242,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void addDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.addDeck();
 		// end-user-code
 	}
@@ -274,7 +253,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void ajouterJoyaux(Integer quantite) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.ajouterJoyaux(quantite);
 		// end-user-code
 	}
@@ -286,7 +264,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public Boolean havePackToOpen() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return iJoueur.havePackToOpen();
 		// end-user-code
 	}
@@ -298,7 +275,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public void deletePack() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		iJoueur.deletePack();
 		// end-user-code
 	}
@@ -314,7 +290,6 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 */
 	public boolean AcheterEmplacementDeck(int prixDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		String bancaire = iJoueur.getCoordB();
 		if(!iPaiement.payer(bancaire, prixDeck)){
 			return false;
@@ -386,9 +361,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 		}
 		List<ICarte> cartes = iStrategieOpenPack.ouvrirPack();
 		iJoueur.deletePack();
-		for(ICarte c: cartes){
-			iJoueur.ajouterCartesPackCollection(c);
-		}
+		iJoueur.ajouterCartesPackCollection(cartes);
 		return true;
 		// end-user-code
 	}

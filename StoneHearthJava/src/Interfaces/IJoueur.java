@@ -67,7 +67,7 @@ public interface IJoueur {
 	 * @param Carte
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajoutCarte(Carte Carte);
+	public void ajoutCarte(ICarte Carte);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -106,7 +106,7 @@ public interface IJoueur {
 	 * @param cartes
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajouterCartesPackCollection(ICarte... cartes);
+	public void ajouterCartesPackCollection(List<ICarte> cartes);
 
 	/** 
 	 * <!-- begin-UML-doc -->

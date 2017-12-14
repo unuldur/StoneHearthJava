@@ -11,53 +11,55 @@ import Interfaces.IPrix;
  * @author julie
  * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
  */
-public class Price implements IPrix {
+public class Price{
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Object prixPackEuro;
+	public static double prixPackEuro = 1.39;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Object prixPackDollars;
+	public static double prixPackDollars = 1.99;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Object prixDeckEuro;
+	public static double prixDeckEuro = 2.;
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	private Object prixDeckDollars;
+	public static double prixDeckDollars = 3.;
 
 	/** 
 	 * (non-Javadoc)
-	 * @see IPrix#getPrixDeck(Object Region)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public int getPrixDeck(Object Region) {
+	public static double getPrixDeck(String Region) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return 0;
+		if(Region.equals("France"))
+			return prixDeckEuro;
+		else
+		    return prixDeckDollars;
 		// end-user-code
 	}
 
 	/** 
 	 * (non-Javadoc)
-	 * @see IPrix#getPrixPack()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public int getPrixPack() {
+	public static double getPrixPack(String Region) {
 		// begin-user-code
-		// TODO Module de remplacement de méthode auto-généré
-		return 0;
+        if(Region.equals("France"))
+            return prixPackEuro;
+        else
+            return prixPackDollars;
 		// end-user-code
 	}
 }

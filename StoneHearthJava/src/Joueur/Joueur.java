@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Joueur;
 
 import Interfaces.IJoueur;
@@ -83,7 +80,6 @@ public class Joueur implements IJoueur {
 	 */
 	public boolean IsCoordoneeBancaireRemplie() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return (coordonneesBancaire!=null) ;
 
 		// end-user-code
@@ -94,10 +90,10 @@ public class Joueur implements IJoueur {
 	 * @see IJoueur#ajoutCB(String type, String numero, String crypto, Date dateE)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
+	public boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
 		// begin-user-code
 		this.coordonneesBancaire=new CoordonneesBancaire(numero,crypto,dateE);
-		return (coordonneesBancaire!=null) ;
+		return true ;
 		// end-user-code
 	}
 
@@ -168,7 +164,6 @@ public class Joueur implements IJoueur {
 	 */
 	public void supprimerDeck(String idDeck) {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 
 		// end-user-code
 	}
@@ -279,7 +274,6 @@ public class Joueur implements IJoueur {
 	 */
 	public int getRang() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return this.rang;
 		// end-user-code
 	}
@@ -291,7 +285,6 @@ public class Joueur implements IJoueur {
 	 */
 	public void addDeck() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 
 		// end-user-code
 	}
@@ -313,9 +306,8 @@ public class Joueur implements IJoueur {
 	 * @see IJoueur#havePackToOpen()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Boolean havePackToOpen() {
+	public boolean havePackToOpen() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
 		return (this.nbPack>0);
 		// end-user-code
 	}

@@ -23,7 +23,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public boolean IsCoordoneeBancaireRemplie();
+	boolean IsCoordoneeBancaireRemplie();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -35,7 +35,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE);
+	boolean ajoutCB(String type, String numero, String crypto, Date dateE);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -43,7 +43,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public List<ICarte> getCartePossedees();
+	List<ICarte> getCartePossedees();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -51,7 +51,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<Deck> getListeDeck();
+	Set<Deck> getListeDeck();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -59,7 +59,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public String creerDeck();
+	String creerDeck();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -67,7 +67,7 @@ public interface IJoueur {
 	 * @param Carte
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajoutCarte(ICarte Carte);
+	void ajoutCarte(ICarte Carte);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -76,7 +76,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Set<String> accederDeck(String idDeck);
+	Set<String> accederDeck(String idDeck);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -84,21 +84,21 @@ public interface IJoueur {
 	 * @param idDeck
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void supprimerDeck(String idDeck);
+	void supprimerDeck(String idDeck);
 
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void gererRang();
+	void gererRang();
 
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void offrirPack();
+	void offrirPack();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -106,7 +106,7 @@ public interface IJoueur {
 	 * @param cartes
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajouterCartesPackCollection(List<ICarte> cartes);
+	void ajouterCartesPackCollection(List<ICarte> cartes);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -114,14 +114,14 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public String getCoordB();
+	String getCoordB();
 
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajouterPacks();
+	void ajouterPacks();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -129,7 +129,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Integer getJoyaux();
+	Integer getJoyaux();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -137,7 +137,7 @@ public interface IJoueur {
 	 * @param nomCarte
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void enleverCartes(String nomCarte);
+	void enleverCartes(String nomCarte);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -145,7 +145,7 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Rarete verifierAchatMax();
+	Rarete verifierAchatMax();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -153,14 +153,14 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public int getRang();
+	int getRang();
 
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void addDeck();
+	void addDeck();
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -168,7 +168,7 @@ public interface IJoueur {
 	 * @param quantite
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void ajouterJoyaux(Integer quantite);
+	void ajouterJoyaux(Integer quantite);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -176,16 +176,16 @@ public interface IJoueur {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Boolean havePackToOpen();
+	boolean havePackToOpen();
 
 	/** 
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public void deletePack();
+	void deletePack();
 
 
-	public int getPack();
+	int getPack();
 
 }

@@ -64,7 +64,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 * @see IJoueur#ajoutCB(String type, String numero, String crypto, Date dateE)
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
+	public boolean ajoutCB(String type, String numero, String crypto, Date dateE) {
 		// begin-user-code
 		return iJoueur.ajoutCB(type, numero, crypto, dateE);
 		// end-user-code
@@ -262,7 +262,7 @@ public class GestJoueurConnecte implements IJoueurConnecte {
 	 * @see IJoueur#havePackToOpen()
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public Boolean havePackToOpen() {
+	public boolean havePackToOpen() {
 		// begin-user-code
 		return iJoueur.havePackToOpen();
 		// end-user-code

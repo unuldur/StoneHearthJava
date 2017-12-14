@@ -23,13 +23,13 @@ public class Carte implements ICarte {
 		this.rarete = rarete;
 	}
 
-	/** 
+	/**
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
 	private String nom;
-	/** 
+	/**
 	 * <!-- begin-UML-doc -->
 	 * <!-- end-UML-doc -->
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
@@ -61,8 +61,7 @@ public class Carte implements ICarte {
 	 */
 	public Rarete getRarete() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
-		return null;
+		return rarete;
 		// end-user-code
 	}
 
@@ -73,8 +72,7 @@ public class Carte implements ICarte {
 	 */
 	public String getNom() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
-		return null;
+		return nom;
 		// end-user-code
 	}
 
@@ -85,8 +83,7 @@ public class Carte implements ICarte {
 	 */
 	public int getAttaque() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
-		return 0;
+		return attaque;
 		// end-user-code
 	}
 
@@ -97,8 +94,7 @@ public class Carte implements ICarte {
 	 */
 	public int getDefense() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
-		return 0;
+		return defense;
 		// end-user-code
 	}
 
@@ -109,8 +105,7 @@ public class Carte implements ICarte {
 	 */
 	public String getDescription() {
 		// begin-user-code
-		// TODO Module de remplacement de m�thode auto-g�n�r�
-		return null;
+		return description;
 		// end-user-code
 	}
 }

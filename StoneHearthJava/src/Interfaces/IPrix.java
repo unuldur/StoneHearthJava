@@ -17,7 +17,7 @@ public interface IPrix {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public int getPrixDeck(Object Region);
+	int getPrixDeck(String Region);
 
 	/** 
 	 * <!-- begin-UML-doc -->
@@ -25,5 +25,5 @@ public interface IPrix {
 	 * @return
 	 * @generated "UML vers Java (com.ibm.xtools.transform.uml2.java5.internal.UML2JavaTransform)"
 	 */
-	public int getPrixPack();
+	int getPrixPack(String Region);
 }
